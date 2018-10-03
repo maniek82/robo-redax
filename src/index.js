@@ -14,8 +14,8 @@ import thunkMiddleware from 'redux-thunk';
 
 const logger = createLogger();
 const rootReducer = combineReducers({
-    searchRobots,
-    requestRobots
+    search:searchRobots,
+    request:requestRobots
 })
 
 const store = createStore(rootReducer,applyMiddleware(thunkMiddleware,logger));

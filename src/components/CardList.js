@@ -12,6 +12,11 @@ const CardList = ({ robots }) => {
               id={robots[i].id}
               name={robots[i].name}
               email={robots[i].email}
+              city={robots[i].region}
+              age={robots[i].age}
+              photo = {robots[i].photo}  
+              phone = {robots[i].phone}
+              
               />
           );
         })
